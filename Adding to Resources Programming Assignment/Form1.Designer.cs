@@ -132,6 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.label1);
@@ -144,6 +145,7 @@
             this.Controls.Add(this.imgComponents);
             this.Name = "Form1";
             this.Text = "Computer Components";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgComponents)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
