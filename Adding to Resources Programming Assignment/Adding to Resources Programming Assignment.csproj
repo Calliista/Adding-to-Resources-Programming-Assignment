@@ -98,5 +98,29 @@
   <ItemGroup>
     <None Include="Resources\RAM %282%29.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61hzuoXwjqL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k-250-graphite-top-view-2-us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headphones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microphone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

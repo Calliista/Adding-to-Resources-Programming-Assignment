@@ -17,6 +17,9 @@ namespace Adding_to_Resources_Programming_Assignment
             InitializeComponent();
         }
 
+        Random generator = new Random();
+        int randNum;
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -35,7 +38,7 @@ namespace Adding_to_Resources_Programming_Assignment
 
         private void btnPower_Click(object sender, EventArgs e)
         {
-            lblDesc.Text = "A power supply is a device that takes electricity from a source(like a wall outlet or battery) and converts it into the exact voltage, current, and form that an electronic device needs to work safely.";
+            lblDesc.Text = "A power supply is a device that takes electricity from a source (like a wall outlet or battery) and converts it into the voltage, current, and form that an electronic device needs to work safely.";
             imgComponents.Image = Properties.Resources.powersupply;
         }
 
@@ -53,16 +56,48 @@ namespace Adding_to_Resources_Programming_Assignment
 
         private void btnInput_Click(object sender, EventArgs e)
         {
-            lblDesc.Text = "An input device is any hardware component that allows a user to enter data, send commands, or provide control signals to a computer or digital system. It translates physical actions, movements, or voice into digital signals that the computer can process. (eg; keyboard, mouse)";
-            imgComponents.Image = Properties.Resources.input1;
+            lblDesc.Text = "An input device is any hardware component that allows a user to enter data, send commands, or provide control signals to a computer or digital system. It translates physical actions, movements, or voice into digital signals that the computer can process. (eg; keyboard, mouse, microphone)";
+            randNum = generator.Next(4);
+            if (randNum == 0)
+            { 
+                imgComponents.Image = Properties.Resources.input1; 
+            }
+            if (randNum == 1)
+            {
+                imgComponents.Image = Properties.Resources.mouse;
+            }
+            if (randNum == 2)
+            {
+                imgComponents.Image = Properties.Resources.keyboard;
+            }
+            if (randNum == 3)
+            {
+                imgComponents.Image = Properties.Resources.microphone;
+            }
         }
 
         private void btnOutput_Click(object sender, EventArgs e)
         {
             lblDesc.Text = "An output device is any piece of computer hardware that receives processed data from a computer and converts it into a form that humans can perceive—such as text, images, sound, or physical documents. (eg; monitor, printer, headphones)";
-            imgComponents.Image = Properties.Resources.output;
-        }
 
+            randNum = generator.Next(4);
+            if (randNum == 0)
+            {
+                imgComponents.Image = Properties.Resources.output;
+            }
+            if (randNum == 1)
+            {
+                imgComponents.Image = Properties.Resources.monitor;
+            }
+            if (randNum == 2)
+            {
+                imgComponents.Image = Properties.Resources.printer;
+            }
+            if (randNum == 3)
+            {
+                imgComponents.Image = Properties.Resources.headphones;
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 

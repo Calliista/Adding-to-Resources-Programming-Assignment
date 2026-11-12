@@ -121,10 +121,9 @@
             // 
             // lblDesc
             // 
-            this.lblDesc.AutoSize = true;
             this.lblDesc.Location = new System.Drawing.Point(21, 372);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(0, 13);
+            this.lblDesc.Size = new System.Drawing.Size(751, 32);
             this.lblDesc.TabIndex = 8;
             this.lblDesc.Click += new System.EventHandler(this.lblDesc_Click);
             // 
